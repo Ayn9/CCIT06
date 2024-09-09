@@ -32,7 +32,10 @@ section{
 #about h2{
     font-size: 55px;
     font-weight: 900;
-    color: rgb(97, 25, 25);
+    color: whitesmoke;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: red;
+
 }
 
 #about{
@@ -42,12 +45,38 @@ section{
 #services{
     background-color: rgb(66, 17, 17);
 }
+#services .btn:hover{
+    color: rgb(255, 255, 255) !important;
+    border-color: rgb(255, 255, 255) !important;
+    background-color: transparent;
+}
+
 #services h3{
     font-size: 55px;
     font-weight: 900;
     color: black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
 }
 
 .luh{
     width: 40%;
 }
+
+.card {
+    transition: background-color 0.3s, color 0.3s;
+    border: 5px solid var(--border); /* Border style */
+    box-shadow: 0 0  10px black;
+    border-radius: 30px;
+}
+
+.card:hover {
+    background-color: black;
+}
+
+.card:hover .card-title,
+.card:hover .card-text,
+.card:hover .btn {
+    color: #fff;
+}
+
