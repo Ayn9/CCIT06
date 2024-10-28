@@ -141,7 +141,7 @@ section{
 }
 
 .accordion-button:hover {
-    background-color: rgb(143, 78, 78);
+    background-color: rgb(163, 41, 41);
     color: whitesmoke;
 }
 
@@ -151,4 +151,49 @@ section{
 
 #faq h2 {
     color: #fff;
+}
+
+footer{
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-color: brown;
+}
+
+#footer ul.list-unstyled li a {
+    color:azure;
+    text-decoration: none;
+}
+
+#footer ul.list-untyled li:hover a {
+    color: rgb(66, 17, 17);
+}
+
+.btn-outline-light{
+    border-color:rgb(236, 233, 233);
+    color: rgb(0, 0, 0);
+    border-radius: 0;
+}
+
+.btn-outline-light:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(78, 19, 19);
+}
+
+@media screen and (max-width:767px) {
+    #about img {
+        height: 300px;
+        width: 300px;
+    }
+
+    #services .card{
+        margin-top: 20px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+}
+
+#about img {
+    width: 600px;
 }
